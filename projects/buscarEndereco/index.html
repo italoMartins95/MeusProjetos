@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styleHeader.css">
+    <link rel="shortcut icon" href="img/pin_gps_location_find_map_search_icon-icons.com_59982.ico" type="image/x-icon">
+    <title>BuscarEndereço</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="..\HistoriaAndroid\index.html" target="_self">AndroidHistory</a>
+                </li>
+                <li>
+                    <a href="..\Calculadora\index.html" target="_self">Calculadora Simples</a>
+                </li>
+                <li>
+                    <a href="..\JogoDaVelha\index.html" target="_self">Jogo da Vellha</a>
+                </li>
+                <li>
+                    <a href="..\json\index.html" target="_self">Json basic</a>
+                </li>
+                <li>
+                    <a href="..\index.html" target="_self" id="navInicio">Inicio</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form onsubmit="buscarCep()">
+        <h2>Buscar Endereços</h2>
+        <div class="contentEndereço">
+            <label>Cep:</label>
+            <input type="text" id="cep" placeholder="00.000-000">
+        </div>
+        <div class="contentEndereço">
+            <label>Logradouro:</label>
+            <input type="text" id="logradouro" placeholder="Nome da Rua">
+        </div>
+        <div class="contentEndereço">
+            <label>Bairro:</label>
+            <input type="text" id="bairro" placeholder="Bairro">
+        </div>
+        <div class="contentEndereço">
+            <label>Cidade:</label>
+            <input type="text" id="cidade" placeholder="Localidade">
+        </div>
+
+        <div class="contentEndereço">
+            <label>Estado:</label>
+            <input type="text" id="estado" placeholder="Estado">
+        </div>
+
+        <button>Buscar</button>
+        <script src="script/script.js"></script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,97 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 100%;
+    margin-top: 50px;
+}
+
+#objetoCreate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 400px;
+
+}
+
+#objetoCreate input{
+    height: 25px;
+    font-size: 15px;
+    outline-style: none;
+}
+
+#objetoCreate .objetoProp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 250px;
+
+    margin: 10px 0;
+}
+
+#objetoCreate select{
+    width: 100px;
+    height: 40px;
+}
+
+#objetoCreate #buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 30px 0;
+    width: 250px;
+}
+
+#objetoCreate button{
+    width: 100px;
+    height: 40px;
+
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+}
+
+#objetoCreate button:hover{
+    color: rgb(194, 169, 28);
+}
+
+#jsonsArea{
+    width: 40%;
+    height: 500px;
+
+    background-color: rgba(10, 10, 10, 0.122);
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+#jsonsArea select{
+	width: 100%;
+    height: 300px;
+
+    outline-style: none;
+}
+
+#btnList{
+width: 100px;
+    height: 40px;
+
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+    margin: 50px 0;
+}
+
+#btnList:hover{
+    color: rgb(194, 169, 28);
+}

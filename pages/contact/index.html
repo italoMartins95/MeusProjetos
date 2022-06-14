@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/styleSmartphone.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+	<h2>Eu.</h2>
+	<ul id="menu">
+	   <li><a href="../../index.html" target="_self">Inicio</a></li>
+	   <li><a href="../sobre/index.html" target="_self">Sobre</a></li>
+	   <li><a href="../../MyCurricullum/myCurricullum.html" target="_blank">Curricullum</a></li>
+	   <li><a href="" target="_self">Projetos</a></li>
+	   <li><a href="" target="_self">Contato</a></li>
+	</ul>
+	<div id="menuHamburguer" onClick="openClouseMenu()">
+		<span id="child1"></span><span id="child2"></span>
+	</div>
+    </header>
+    <main>
+		<form action="https://api.staticforms.xyz/submit" method="post"> 
+			<input type="hidden" name="accessKey" value="cf8d9009-9c6d-47a0-9a15-23b55af2464f">
+			<h3>Contate-me</h3>
+			<hr>
+			<div>
+				<input type="text" name="name" placeholder="your name" required id="name">
+				<img src="image/userIco.svg" alt="name" id="nameImg">
+			</div>
+			<div>
+				<input type="email" name="email" placeholder="your e-mail" required id="email">
+				<img src="image/emailIco.svg" alt="email" id="emailImg">
+			</div>
+			<textarea name="message" id="msgContact" cols="1" rows="10" placeholder="enter your message..."></textarea>
+			<input type="hidden" name="redirectTo" value="https://italomartins95.github.io/MeusProjetos/index.html">
+			<button>Enviar</button>
+		</form>
+    </main>
+	<footer>
+		<p>2022&copy;</p>
+		<div>
+			<a href="https://www.linkedin.com/in/italo-martins-3a73b1190/" target="_blank">
+				<img src="image/linkedinIco.svg" alt="linkedIn">
+			</a>
+			<a href="https://github.com/italoMartins95" target="_blank">
+				<img src="image/gitHubIco.svg" alt="gitHub">
+			</a>
+			<img src="image/foneIco.svg" alt="foneContact" id="foneIco">
+			<a href="https://www.google.com/maps/place/R.+Grande+Oriente,+284+-+Nazar%C3%A9/@-8.017452,-34.9708187,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab1a3914e84fa3:0xcfa135ff44cfa4b6!4b1!8m2!3d-8.017452!4d-34.96863" target="_blank">
+				<img src="image/locationIco.svg" alt="location"> 
+			</a>
+		</div>
+	</footer>
+	<div id="fone" style="display: none;">
+		<p>Fone: (81) 9.9541-3050</p>
+		<p>Email: italomartinssk88@gmail.com</p>
+	</div>
+	<script src="script/script.js"></script>
+	<script src="../../index.js"></script>
+</body>
+</html>

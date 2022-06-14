@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+
+   font-family: Cairo;
+}
+
+body{
+   background-color: white;
+}
+
+header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   width: 100%;
+   height: 80px;
+
+   background-color: #e5dffe;
+}
+
+header a{
+   color: black;
+   text-decoration: none;
+}
+
+header h2{
+   font-family: 'Anton';
+   
+   margin: 0 60px;
+}
+
+header ul{
+   list-style: none;
+   font-family: 'Barlow';
+
+   position: absolute;
+   right: 20px;
+}
+
+header ul li{ 
+   display: inline-block;
+
+   margin: 0 20px;
+   cursor: pointer;
+
+   font-size: 17px;
+}
+
+header ul li:hover{
+   text-decoration: underline;
+} 
+
+main{
+   position: relative;
+   
+   width: 80%;
+   margin: 40px auto;
+
+   text-align: justify;
+}
+
+main p{
+   margin: 20px 0;
+}
+
+.iconsText{
+   width: 40px;
+   height: 40px;
+
+   transform: translate(0 , 10px);
+}
+
+#perfil{
+   position: relative;
+   
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+   width: 100%;
+}
+
+#perfil aside{
+   width: 600px;
+}
+
+#perfil img{
+   width: 500px;
+   height: 500px;
+
+   border-radius: 50%;
+}
+
+section{
+   margin: 120px 0;
+
+   font-size: 20px;
+   line-height: 35px;
+}
+
+section h1, h2, h3{
+   font-family: 'Permanent Marker';
+   font-size: 40px;
+   text-align: center;
+
+   margin: 100px 0 60px 0;
+}
+
+#skils{
+   width: 110%;
+   max-height: 405px;
+   transform: translate(-5% , 0);
+
+   margin: 50px 0 0 0;
+   padding: 10px 0;
+}
+
+#skils h3{
+   margin: 30px 0 50px 50px;
+   text-align: left;
+}
+
+#skilsContent{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   width: 100%; 
+   margin-bottom: 80px;
+}
+
+#skilsContent img{
+   width: 190px;
+   height: 190px;
+
+   margin: 10px;
+   transition: .3s ease;
+}
+
+#skilsContent img:hover{
+   width: 220px;
+   height: 220px;
+
+   transform: translate(-15px , -30px);
+   cursor: pointer;
+}
+
+#skilsButtons{
+   display: none;
+}
+
+#sectionAsa , #sectionIdentifick{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   width: 100%;
+
+   margin: 150px 0;
+}
+
+#sectionIdentifick p , #sectionAsa p{
+   position: relative;
+   width: 550px;
+   
+   font-size: 20px;
+   line-height: 30px;
+
+   color: white;
+}
+
+#sectionAsa p::before{
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+
+   display: block;
+
+   width: 650px;
+   height: 300px;
+
+   background-color: #222970d8;
+   z-index: -1;
+
+   transform: translate(-50% , -50%);
+   clip-path: polygon(0% 5% , 5% 95% , 92% 80% , 100% 15%);
+}
+
+#sectionIdentifick p::before{
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+
+   display: block;
+
+   width: 750px;
+   height: 400px;
+
+   background-color: #222970d8;
+   z-index: -1;
+
+   transform: translate(-50% , -50%);
+   clip-path: polygon(5% 20% , 10% 80% , 87% 90% , 95% 10%);
+}
+
+#carrosselAsa, #carrosselIdentifick{
+   position: relative;  
+   
+   width: 450px;
+   height: 320px;
+
+   background-color: white;
+   border: solid 3px #222870;
+  
+   overflow: hidden;
+}
+
+#carrosselAsa::before , #carrosselIdentifick::before{
+   content: '';
+   position: absolute;
+   right: 0;
+
+   display: block;
+   
+   width: 60px;
+   height: 100%;
+
+   background-color: #222870;
+}
+
+#carrosselIdentifick:before{
+   left: 0;
+}
+
+.carrosselContent{
+   display: flex;
+   flex-direction: row;
+
+   width: 300%;
+   height: 100%;
+}
+
+#contentAsa{
+   animation: carrosselMoveAsa 12s infinite;
+}
+
+#contentIdentifick{
+   margin-left: -205%;
+
+   animation: carrosselMoveIdck 12s infinite;
+}
+
+.carrosselContentChild{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 33.33%;
+   height: 100%;
+}
+
+.lastSactions{
+   margin: 50px 0;
+}
+
+#carrosselLazer img{
+   margin: 0 25px;
+
+   width: 250px;
+   height: 250px;   
+}
+
+aside img{
+   width: 300px;
+   height: 300px;
+}
+
+#meuCurriculoAki{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+
+   width: 100%;
+
+   text-align: right;
+}
+
+#meuCurriculoAki p{
+   margin: 10px;
+}
+
+#meuCurriculoAki button{
+   width: 70px;
+   height: 70px;
+
+   background-color: transparent;
+   border-radius: 50%;
+   border: none;
+
+   cursor: pointer;
+   margin: 90px 0 0 20px;
+}
+
+footer {  
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+
+   width: 100%;
+   height: 100px;
+
+   margin-top: 50px;
+}
+
+footer p{
+   position: absolute;
+   left: 50%;
+   transform: translate(-50% , 0);
+
+   width: 80px;
+
+   background-color: black;
+   color: white;
+
+   font-size: 20px;
+   text-align: center;
+}
+
+footer div{
+   margin-right: 30px;
+}
+
+footer img{
+   width: 40px;
+   height: 40px;
+
+   margin: 0 5px;
+   cursor: pointer;
+}
+
+footer a{
+   text-decoration: none;
+}
+
+footer p{
+   position: absolute;
+   left: 50%;
+   transform: translate(-50% , 0);
+
+   width: 80px;
+
+   background-color: black;
+   color: white;
+
+   font-size: 20px;
+   text-align: center;
+   font-family: Cairo;
+}
+
+#fone{
+   position: absolute;
+   top: 0;
+   left: 0;
+
+   font-family: 'Cairo';
+   line-height: 25px;
+
+   background-color: #000000c0;
+   color: white;
+
+   padding: 8px;
+}
+
+@keyframes carrosselMoveAsa{
+   0%{
+      margin-left: 0;
+   }
+
+   15%{
+      margin-left: -110%;
+   }
+   30%{
+      margin-left: -100%;
+   }
+
+   45%{
+      margin-left: -210%;
+   }
+   60%{
+      margin-left: -200%;
+   }
+
+   75%{
+      margin-left: -210%;
+   }
+   90%{
+      margin-left: 0;
+   }
+}
+
+@keyframes carrosselMoveIdck{
+   0%{
+      margin-left: -205%;
+   }
+
+   20%{
+      margin-left: -87%;
+   }
+   30%{
+      margin-left: -90%;
+   }
+
+   45%{
+      margin-left: 12%;
+   }
+   60%{
+      margin-left: 8%;
+   }
+
+   75%{
+      margin-left: 13%;
+   }
+   90%{
+      margin-left: -205%;
+   }
+}

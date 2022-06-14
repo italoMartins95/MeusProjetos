@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styleHeader.css">
+    <link rel="shortcut icon" href="img/file_type_light_json_icon_130455.ico" type="image/x-icon">
+    <title>JsonManipulation</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="..\HistoriaAndroid\index.html" target="_self">AndroidHistory</a>
+                </li>
+                <li>
+                    <a href="..\Buscador de Endereços\index.html" target="_self">Buscar Endereços</a>
+                </li>
+                <li>
+                    <a href="..\Calculadora\index.html" target="_self">Calculadora Simples</a>
+                </li>
+                <li>
+                    <a href="..\JogoDaVelha\index.html" target="_self">Jogo da Vellha</a>
+                </li>
+                <li>
+                    <a href="..\index.html" target="_self" id="navInicio">Inicio</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="objetoCreate">  
+            <div>
+                <h2>Crie um Objeto simples</h2>
+                <div class="objetoProp">
+                    <label>Nome:</label>
+                    <input type="text" id="nome" placeholder="Seu Nome">
+                </div>
+                <div class="objetoProp">
+                    <label>Idade:</label>
+                    <input type="number" id="idade" placeholder="Sua Idade">
+                </div>
+                <div class="objetoProp">
+                    <label>Sexo:</label>
+                    <select id="sexo">
+                        <option>Selecione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                </div>
+            </div>
+            <div id="buttons">
+                <button id="btnCreateObject" onClick="create()">Create Object</button>
+                <button id="btnTransformJson" onClick="transformJson()">Transform Json</button>
+            </div>
+        </section>
+        <section id="jsonsArea">
+		    <h2>Visualização dos Jsons</h2>
+		    <select size="10" id="jsonList">
+		</select>
+		    <button id="btnList" onClick="addJson()">Listar Jsons</button>
+        </section>
+    </main>    
+    <script src="script/script.js"></script>
+</body>
+</html>

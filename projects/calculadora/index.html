@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleHeader.css">
+    <link rel="shortcut icon" href="img/Calculator_30001.ico" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="..\HistoriaAndroid\index.html" target="_self">AndroidHistory</a>
+                </li>
+                <li>
+                    <a href="..\Buscador de Endereços\index.html" target="_self">Buscar Endereços</a>
+                </li>
+                <li>
+                    <a href="..\JogoDaVelha\index.html" target="_self">Jogo da Vellha</a>
+                </li>
+                <li>
+                    <a href="..\json\index.html" target="_self">Json basic</a>
+                </li>
+                <li>
+                    <a href="..\index.html" target="_self" id="navInicio">Inicio</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br>
+    <h1>Bem vindo a sua calculadora!</h1>  
+    <br><br>
+    <form id="calc">
+        <div id="display"></div>
+        <div class="content">
+            <input type="button" value="7" class="button" onClick="botoes(value)">
+            <input type="button" value="8" class="button" onClick="botoes(value)">
+            <input type="button" value="9" class="button" onClick="botoes(value)">
+            <input type="button" value="/" class="button" onClick="botoes(value)">
+        </div>
+        <div class="content">
+            <input type="button" value="4" class="button" onClick="botoes(value)">
+            <input type="button" value="5" class="button" onClick="botoes(value)">
+            <input type="button" value="6" class="button" onClick="botoes(value)">
+            <input type="button" value="*" class="button" onClick="botoes(value)">
+        </div>
+        <div class="content">
+            <input type="button" value="1" class="button" onClick="botoes(value)">
+            <input type="button" value="2" class="button" onClick="botoes(value)">
+            <input type="button" value="3" class="button" onClick="botoes(value)">
+            <input type="button" value="-" class="button" onClick="botoes(value)">
+        </div>
+        <div class="content">
+            <input type="button" value="C" class="button" id="bottomLeft" onClick="clean()">
+            <input type="button" value="0" class="button" onClick="botoes(value)">
+            <input type="button" value="=" class="button" id="bottomResult" onClick="calcular()">
+            <input type="button" value="+" class="button" id="bottomRight" onClick="botoes(value)">
+        </div>        
+    </form>
+    <script src="scripts/calculadora.js"></script>
+</body>
+</html>

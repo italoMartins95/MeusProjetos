@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleHeader.css">
+    <link rel="shortcut icon" href="img/tic-tac-toe_39453.ico" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="..\HistoriaAndroid\index.html" target="_self">AndroidHistory</a>
+                </li>
+                <li>
+                    <a href="..\Buscador de Endereços\index.html" target="_self">Buscar Endereços</a>
+                </li>
+                <li>
+                    <a href="..\Calculadora\index.html" target="_self">Calculadora Simples</a>
+                </li>
+                <li>
+                    <a href="..\json\index.html" target="_self">Json basic</a>
+                </li>
+                <li>
+                    <a href="..\index.html" target="_self" id="navInicio">Inicio</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Jogo da Velha #</h1>
+
+    <div id="jogadores">
+        <label for="jogador1">Nome:</label>
+        <input type="text" id="jogador1" placeholder="Jogador 1">
+        <label for="jogador2">Nome:</label>
+        <input type="text" id="jogador2" placeholder="Jogador 2"> <br>
+        <button onclick="iniciar()">Iniciar Jogo</button>
+        <script src="scripts/JogoDaVelha.js"></script>
+    </div>
+    
+    <form id="JogoDaVelha" style="display: none;">
+        <div class="content">
+            <button type="button" class="button" onClick="botao(id)" id="btn1"></button>
+            <button type="button" class="button" onClick="botao(id)" id="btn2"></button>
+            <button type="button" class="button" onClick="botao(id)" id="btn3"></button>
+        </div>
+        <div class="content">
+            <button type="button" class="button" onClick="botao(id)" id="btn4"></button>
+            <button type="button" class="button" onClick="botao(id)" id="btn5"></button>
+            <button type="button" class="button" onClick="botao(id)" id="btn6"></button>
+        </div>
+        <div class="content">
+            <button type="button" class="button" onClick="botao(id)" id="btn7"></button>
+            <button type="button" class="button" onClick="botao(id)" id="btn8"></button>
+            <button type="button" class="button" onClick="botao(id)" id="btn9"></button>
+        </div>      
+    </form>
+    <script src="scripts/JogoDaVelha.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+@media (max-width: 600px){
+
+#menuHamburguer{
+   position: absolute;
+   right: 18px;
+   
+   width: 40px;
+   height: 25px;
+}
+
+#menuHamburguer span{
+   display: block;
+
+   width: 80%;
+   height: 4px;
+
+   background-color: #222870;
+   border-radius: 1px;
+   margin: 5px auto;
+}
+
+#child1{
+   position: relative;
+   top: -2px;
+
+   transition: .8s ease;
+}
+
+#child2{
+   position: relative;
+   top: 1px;
+
+   transition: .8s ease;
+}
+
+
+header h2{  
+   margin: 0 20px;
+}
+
+header ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  width: 100%;
+  height: 620px;
+
+  top: 80px;
+  left: -100%;
+
+  background-color: #222970;
+  transition: 1s ease;
+
+  z-index: 3;
+}
+
+header ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  height: 70px;
+
+  margin: 10px auto;
+  text-align: center;
+}
+
+header a{
+  color: white;
+}
+
+main{
+   width: 100%;
+
+   margin: auto;
+}
+
+section{
+   width: 100%;
+   margin: 60px 0;
+
+   font-size: 15px;
+   line-height: 20px;
+}
+
+#perfil{
+   margin: 10px 0;
+}
+
+section p{
+   width: 95%;
+   margin: auto;
+}
+
+#perfil p:nth-child(1){
+   width: 210px;
+
+   text-align: left;
+   margin: 0 0 20px 10px;
+}
+
+#perfil aside{
+   width: 100%;
+
+   transform: translate(0 , 50px);
+}
+
+#perfil img{
+   position: absolute;
+   top: 15px;
+   right: 10px;
+
+   width: 100px;
+   height: 100px;
+}
+
+.iconsText{
+   display: none;
+}
+
+#skils{
+   position: relative;
+   left: 50%;
+   transform: translate(-50%, 0);
+
+   width: 100%;
+
+   margin: auto;
+   padding: 0;
+
+   overflow: hidden;
+}
+
+#skils h3{
+   margin: 20px 0 30px 0;
+
+   font-size: 30px;
+   text-align: center;
+}
+
+#skilsContent{
+   width: 600%;
+   margin-bottom: 20px;
+
+   transition: 1s ease;
+}
+
+#skilsContent img:hover{
+   width: 100%;
+   height: 190px;
+
+   transform: translate(0 , 0);
+}
+
+#skilsContent > div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 16.66%;
+}
+
+#skilsButtons{
+   display: flex;
+   justify-content: center;
+
+   position: relative;
+   top: -20px;
+
+   width: 100%;
+}
+
+#skilsButtons button{
+   width: 15px;
+   height: 15px;
+
+   border-radius: 50%;
+   margin: 0 10px;
+
+   background-color: rgba(0, 0, 0, 0.556);
+   border: none;
+
+   text-align: center;
+}
+
+#h3{
+   width: 100%;
+
+   font-size: 30px;
+   text-align: center;
+}
+
+#sectionAsa , #sectionIdentifick{
+   position: relative;
+
+   display: block;
+
+   width: 100%;
+   height: 500px;
+
+   margin: 50px 0;
+}
+
+#sectionAsa p{
+   top: 10%;
+}
+
+#carrosselAsa, #carrosselIdentifick{   
+   width: 100%;
+   height: 260px;
+
+   border: none;
+  
+   overflow: hidden;
+   z-index: -10;
+}
+
+#carrosselAsa{
+   top: 20%;
+}
+
+#carrosselAsa::before , #carrosselIdentifick::before{
+   display: none;
+}
+
+#sectionIdentifick p , #sectionAsa p{
+   width: 95%;
+   
+   font-size: 20px;
+   line-height: 25px;
+}
+
+#sectionIdentifick p{
+   position: absolute;
+   top: 20%;
+   
+   left: 2.5%;
+}
+
+#carrosselIdentifick{
+   position: relative;
+   top: 75%;
+}
+
+#sectionAsa p::before{
+   width: 105%;
+   height: 400px;
+
+   clip-path: polygon(0 1% , 0 90% , 100% 95% , 100% 5%);
+}
+
+#sectionIdentifick p::before{
+   width: 105%;
+   height: 350px;
+
+   clip-path: polygon(0 10% , 0 90% , 100% 95% , 100% 5%);
+}
+
+.lastSections h1{
+   margin: 180px 0 20px 0;
+}
+
+#carrosselLazer{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+
+   height: 1100px;
+   margin: 10px 0;
+}
+
+#meuCurriculoAki h3{
+   font-size: 25px;
+}
+
+#meuCurriculoAki div p{
+   margin: 0;
+}
+
+#meuCurriculoAki button{
+   display: block;
+
+   width: 40px;
+   height: 40px;
+
+   margin: 90px 10px 0 10px;
+}
+
+footer p{
+   transform: translate(-25px , 30px);
+   width: 50px;
+
+   font-size: 10px;
+}
+
+footer div{
+   margin-right: 5px;
+}
+
+footer img{
+   width: 25px;
+   height: 25px;
+
+   margin: 0 0;
+}
+}
