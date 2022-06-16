@@ -31,35 +31,40 @@
             </ul>
         </nav>
     </header>
-    <br><br><br><br>
-    <h1>Bem vindo a sua calculadora!</h1>  
+    <br>
+    <h1>Calc</h1>  
     <br><br>
     <form id="calc">
-        <div id="display"></div>
+        <div id="display">
+	    <div id="displayContent"></div>
+   	    <div id="displayCalc"></div>
+	</div>
+	<div class="conteiner">
         <div class="content">
             <input type="button" value="7" class="button" onClick="botoes(value)">
             <input type="button" value="8" class="button" onClick="botoes(value)">
             <input type="button" value="9" class="button" onClick="botoes(value)">
-            <input type="button" value="/" class="button" onClick="botoes(value)">
+            <input type="button" value="/" class="button right" onClick="botoes(value)">
         </div>
         <div class="content">
             <input type="button" value="4" class="button" onClick="botoes(value)">
             <input type="button" value="5" class="button" onClick="botoes(value)">
             <input type="button" value="6" class="button" onClick="botoes(value)">
-            <input type="button" value="*" class="button" onClick="botoes(value)">
+            <input type="button" value="*" class="button right" onClick="botoes(value)">
         </div>
         <div class="content">
             <input type="button" value="1" class="button" onClick="botoes(value)">
             <input type="button" value="2" class="button" onClick="botoes(value)">
             <input type="button" value="3" class="button" onClick="botoes(value)">
-            <input type="button" value="-" class="button" onClick="botoes(value)">
+            <input type="button" value="-" class="button right" onClick="botoes(value)">
         </div>
         <div class="content">
-            <input type="button" value="C" class="button" id="bottomLeft" onClick="clean()">
+            <input type="button" value="C" class="button c" id="bottomLeft" onClick="clean()">
             <input type="button" value="0" class="button" onClick="botoes(value)">
-            <input type="button" value="=" class="button" id="bottomResult" onClick="calcular()">
-            <input type="button" value="+" class="button" id="bottomRight" onClick="botoes(value)">
-        </div>        
+            <input type="button" value="=" class="button igual" onClick="calcular()">
+            <input type="button" value="+" class="button right" onClick="botoes(value)">
+        </div> 
+	</div>       
     </form>
     <script src="scripts/calculadora.js"></script>
 </body>
