@@ -6,33 +6,78 @@ body{
 }
 
 #calc{
-    width: 400px;
-    height: 295px;
+    position: relative;
+
+    width: 300px;
+    height: 450px;
 
     padding-top: 1px;
     margin: auto;
     
-    background-color: #282b3ab9;
-    border-radius: 3px 3px 45px 45px;
+    background-color: #111111;
+    border-radius: 3px;
 
     box-shadow: 0 5px 15px black;
 }
 
 #display{
-    display: flex;
-    justify-content: right;
-    align-items: center;
+    position: relative;
 
-    width: 90%;
-    height: 50px;
+    width: 95%;
+    height: 170px;
 
     margin: 10px auto;
-    padding: 0 10px;
 
     background-color: white;
-    color: #6b6666;
 
     font-size: 20px;
+}
+
+#displayContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 120px;
+
+    border-bottom: dashed 1px white;
+    color: #6b6666;
+}
+
+#displayContent p{
+    margin: 5px 5px;
+}
+
+#displayCalc{
+    position: absolute;
+    top: 120px;
+    left: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+}
+
+#displayCalc p{
+    margin: 5px 5px;
+}
+
+.conteiner{
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    width: 100%;
+
+    transform: translate(-50% , 0);
 }
 
 .content{
@@ -46,29 +91,37 @@ body{
 }
 
 .button{
-    width: 90px;
+    width: 65px;
     height: 50px;
 
     font-weight: bold;
     font-size: 18px;
 
     border: none;
+    border-radius: 3px;
+
+    background-color: white;
 }
 
-#bottomLeft{
-    border-radius: 0 0 0 35px;
+.c{
     background-color: crimson;
+    color: white;
 }
 
-#bottomResult{
+.igual{
     background-color: #0092FA;
+    color: white;
 }
 
-#bottomRight{
-    border-radius: 0 0 35px 0;
+.right{
+    background-color: #7d7d7d;
+    color: white;
+
+    font-weight: bold;    
 }
 
 .button:hover{
-    background-color: rgb(141, 140, 140);
+    background-color: #d2d2d2;
+    color: white;    
     cursor: pointer;
 }
