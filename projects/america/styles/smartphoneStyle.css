@@ -1,4 +1,4 @@
-@media (max-width: 550px){
+@media (max-width: 600px){
 
     body::before{
         clip-path: polygon(0 0 , 0 120px , 100% 200px , 100% 0);
