@@ -28,23 +28,23 @@
 
     h1{
         color: white;
-        font-size: 30px;
+        font-size: 35px;
 
-        transform: translate(-90% , -190%);
+        transform: translate(-85% , -180%);
     }
 
     #imgCar{
         position: absolute;
-        top: 40px;
+        top: 0;
         left: 0;
     
-        width: 250px;
-        height: 200px;
+        width: 350px;
+        height: 300px;
     }
 
     form{
         left: 50%;
-        transform: translate(-50% , 20%);
+        transform: translate(-50% , 40%);
         
         width: 90%;
         height: 350px;
@@ -57,12 +57,12 @@
     }
 
     .dadosPessoais div{    
-        margin-right: 0;
+        margin: 0 8px;
     }
 
     .p{
         font-size: 20px;
-        text-align: left;
+        text-align: center;
         font-weight: bold;
         
         margin-top: 15px;
@@ -87,7 +87,11 @@
     }
 
     .dadosVeiculo input{
-        margin: 5px 0;
+        margin: 5px 8px;
+    }
+
+    .dadosVeiculo p{
+        margin: 10px 0;
     }
 
     button{
