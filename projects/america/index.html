@@ -4,20 +4,46 @@
 	<meta content="width=device-width">
 	<title>Examples of using the ondrag Global Event Attribute</title>
 	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/smartphoneStyle.css">
 	<link rel="icon" href="imagens/logo-america-protecao-veicular.ico" type="image/x-icon" />	
 </head>
 <body>
 	<main>
-   	   <aside>
-		<img src="imagens/logo-america-protecao-veicular.png" alt="logo" id="logo">
-	   </aside>
-	   <h2>Garanta a sua tranquilidade!</h2>
-	   <h1>Proteja seu veículo sem burocracia</h1>
-	</main>
-		
-	<script>
-			
-
-	</script>	
+		<aside>
+			<img src="imagens/logo-america-protecao-veicular.png" alt="logo" id="imgAmerica">
+			<h1>Vitor Alves</h1>
+		</aside>
+		<img src="imagens/carMot.svg" alt="Car & Moto" id="imgCar">
+		<form action="https://api.staticforms.xyz/submit" method="post">
+			<input type="hidden" name="accessKey" value="cf8d9009-9c6d-47a0-9a15-23b55af2464f">
+			<input type="hidden" name="subject" value="Pedido de Orçamento de Seguro" />
+			<p class="p">Garanta a sua tranquilidade</p>
+			<div class="contentForm">
+				<div class="dadosPessoais">
+					<div>
+						<label for="name">Nome</label>
+						<input type="text" id="name" placeholder="Digite seu nome">
+					</div>
+					<div>
+						<label for="fone">Telefone</label>
+						<input type="text" id="fone" placeholder="Telefone para contato">
+					</div>
+				</div>
+				<div class="dadosVeiculo">
+					<label for="">Informações do Veículo</label>
+					<input type="text" id="marca" placeholder="Marca">
+					<input type="text" id="modelo" placeholder="Modelo">
+					<p>Ano do Veículo:
+						<select name="ano" id="ano" >
+						</select>
+					</p>
+				</div>
+				<textarea name="message" id="message"></textarea>
+			</div>
+			<button>Solicitar Orçamento</button>
+			<input type="hidden" name="redirectTo" value="www.google.com">
+		</form>
+	</main>		
+	<script src="scripts/script.js"></script>
 </body>
 </html>
