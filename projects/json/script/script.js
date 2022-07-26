@@ -55,3 +55,32 @@ function addJson(){
 		list.appendChild(option)
 	}	
 }
+
+var buscador = document.getElementById('buscador')
+var lista = document.getElementById('lista')
+
+var myList = ['italo','laiza','mateus','artur','camila','juvita','jose']
+
+for(var x=0 ; x < myList.length ; x++){
+	var item = document.createElement('li')
+	item.innerHTML = `${myList[x]}`
+
+	lista.appendChild(item)
+}
+
+function buscarItens(){
+	lista.innerHTML = ""
+
+	var listaFiltrada = myList.filter(li => {
+		return li.toLocaleLowerCase().includes(buscador.value)
+	})
+
+	listaFiltrada.map(li =>{
+		var itemFiltrado = document.createElement('li')
+		itemFiltrado.innerHTML = li
+
+		lista.appendChild(itemFiltrado)
+	})
+}
+
+buscador.addEventListener('input' , buscarItens)
